@@ -1,8 +1,8 @@
 package com.example.rickandmortyapi.di
 
 import com.example.rickandmortyapi.model.ApiService
-import com.example.rickandmortyapi.model.MainActivityRepository
-import com.example.rickandmortyapi.viewmodel.MainActivityViewModel
+import com.example.rickandmortyapi.model.CharacterListRepositoryImpl
+import com.example.rickandmortyapi.viewmodel.CharacterListViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 import retrofit2.Retrofit
@@ -17,9 +17,9 @@ val modelModule = module {
     }
 
     single { get<Retrofit>().create(ApiService::class.java) }
-    factory { MainActivityRepository(get()) }
+    factory { CharacterListRepositoryImpl(get()) }
 }
 
 val viewModelModule = module {
-    viewModel { MainActivityViewModel(get()) }
+    viewModel { CharacterListViewModel(get()) }
 }

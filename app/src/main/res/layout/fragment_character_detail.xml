@@ -112,41 +112,36 @@
             android:id="@+id/tvStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/tvIdCharacter"
-            app:layout_constraintHorizontal_bias="0.164"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.064"
             tools:text="Unknown" />
 
         <TextView
             android:id="@+id/tvIdCharacter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="32dp"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.89"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.064"
             tools:text="7" />
 
         <ImageView
             android:id="@+id/ivCharacter"
             android:layout_width="220dp"
             android:layout_height="220dp"
-            app:layout_constraintBottom_toTopOf="@+id/tvGender"
+            android:layout_marginTop="32dp"
+            android:importantForAccessibility="no"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvStatus"
-            app:layout_constraintVertical_bias="0.3"
-            android:importantForAccessibility="no" />
+            app:layout_constraintTop_toBottomOf="@+id/tvStatus" />
 
         <TextView
             android:id="@+id/tvName"
